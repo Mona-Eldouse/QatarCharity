@@ -4,18 +4,28 @@
   margin-top: 0px;
   color: antiquewhite;
 }
-
+#Counter{
+     width: 100%;
+    font-size: medium;
+}
 body{
     background-image: url(Ramadanpage.jpg);
-    width: 100%;
-    font-size: medium;
     background-attachment: fixed;
     background-size: 100% 100%;
     /* background-color: lightgrey; */
     background-repeat: no-repeat; 
+    opacity: 0.5;
 }
 
 p{
     text-align: center;
     font:30px;
+}
+#para1{
+    border-color: rgb(250, 246, 218);
+    border: 10px 0px 10px 0px;
+    border-style:groove;
+    border-radius:10px;
+    width: 500px;
+    margin: auto;
 }
