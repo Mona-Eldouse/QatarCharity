@@ -1,4 +1,4 @@
-p {
+#demo {
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
@@ -13,4 +13,9 @@ body{
     background-size: 100% 100%;
     /* background-color: lightgrey; */
     background-repeat: no-repeat; 
+}
+
+p{
+    text-align: center;
+    font:30px;
 }
