@@ -2,10 +2,12 @@ p {
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
+  color: antiquewhite;
 }
 
 body{
-    background-image: url(home.jpg);
-    width: 100px;
+    background-image: url(aa.png);
+    width: 100%;
     background-color: lightgrey;
+    background-repeat: no-repeat;
 }
