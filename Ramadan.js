@@ -17,3 +17,16 @@ function show(){
     let showdiv = document.getElementById("style1")
     showdiv.style.display ="inline"
 }
+
+function save(){
+    let pro = document.getElementById("pro").value
+    let count = document.getElementById("count").value
+    let cost = document.getElementById("cost").value
+
+    if (pro===" "|| count === " "|| cost ===" "){
+        alert("blaaaaaaaa")
+    }
+    else{
+        Array.pus
+    }
+}
