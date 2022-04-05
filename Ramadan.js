@@ -1,7 +1,7 @@
 alert("hello from Ramadan page ")
 
 // inputs 
- let butt1 = document.getElementById("but1")
+ let butt1 = document.getElementById("butt1")
 
 
 
