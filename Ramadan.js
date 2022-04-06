@@ -1,5 +1,6 @@
 alert("hello from Ramadan page ")
-
+// array 
+Donate =[]
 // inputs 
  let butt1 = document.getElementById("butt1")
 
@@ -22,11 +23,17 @@ function save(){
     let pro = document.getElementById("pro").value
     let count = document.getElementById("count").value
     let cost = document.getElementById("cost").value
-
+    let Donatebutt = document.getElementById("save")
     if (pro===" "|| count === " "|| cost ===" "){
         alert("blaaaaaaaa")
     }
     else{
-        Array.pus
+        Donate.push({
+            pro : pro,
+            count : count,
+            cost : cost 
+        })
+        
     }
+    console.log(Donate)
 }

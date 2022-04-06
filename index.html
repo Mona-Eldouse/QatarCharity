@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/owl.carousel.js"></script> 
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+
+  $('#camera_wrap').camera({
+    loader: false,
+    pagination: false ,
+    minHeight: '400',
+    thumbnails: false,
+    height: '38.07291666666667%',
+    caption: false,
+    navigation: true,
+    fx: 'mosaic'
+  });
+
+  $("#owl").owlCarousel({
+    items : 3, //10 items above 1000px browser width
+    itemsDesktop : [995,1], //5 items between 1000px and 901px
+    itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+    itemsTablet: [700, 1], //2 items between 600 and 0
+    itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+    navigation : true,
+    pagination :  false
+  }); 
+ }); 
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1 class="logo">
+        <a href="index.html">
+          Qatar Charity
+          <span>Ramadan of hope</span>
+        </a>
+      </h1>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+    <div class="container_12">
+        <div class="grid_12">          
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="index.html">Home</a></li>
+               <li><a href="about.html">Donate</a></li>
+               <li><a href="mission.html">Project</a></li>
+               <li><a href="membership.html">Zakat</a></li>
+               <li><a href="contacts.html">Contacts</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+     </div> 
+     <div class="clear"></div>
+    </div> 
+  </section>
+</header>
+<section class="slider_wrapper">
+  <div id="camera_wrap" class="">
+    <div data-src="images/Qatar Charity.jpg"></div>
+    <div data-src="images/Kenyan-orphans.jpg"></div>
+    <div data-src="images/giving.jpg"></div>  
+  </div>  
+</section> 
+<!--=====================
+          Content
+======================-->
+<section id="content"><div class="ic"></div>
+  <div class="container_12">
+    <div class="grid_4">
+      <div class="banner">
+        <a href="#" class="banner_title">Donation <br></a>
+        <div class="maxheight"><img src="images/icon1.png" alt=""></div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="banner">
+        <a href="#" class="banner_title">Project<br></a>
+        <div class="maxheight"><img src="images/icon2.png" alt=""></div>
+      </div>
+    </div>
+    <div class="grid_4">
+      <div class="banner">
+        <a href="#" class="banner_title">Zakat<br></a>
+        <div class="maxheight"><img src="images/icon3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <article class="block-1">
+    <div class="container_12">
+      <div class="grid_12">
+        <h2>See our new projects that you can share for it </h2>
+      
+      </div>
+      <div class="grid_4">
+        <img src="images/education.jpeg" alt="">
+        <div class="extra_wrapper">
+          <div class="block-1_title"><a href="#">Education</a></div>
+      
+        </div>
+      </div>
+      <div class="grid_4">
+        <img src="images/moo2.jpeg" alt="">
+        <div class="extra_wrapper">
+          <div class="block-1_title"><a href="#">Mosques</a></div>
+         
+        </div>
+
+      </div>
+      <div class="grid_4">
+        <img src="images/watar.jpeg" alt="">
+        <div class="extra_wrapper">
+          <div class="block-1_title"><a href="#">Watar</a></div>
+         
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </article>
+  <div class="container_12">
+    <div class="grid_6">
+      <div class="block-2">
+        <img src="images/b_icon1.png" alt="">
+        <div class="text1"><a href="#">About us</a></div>
+        ABOUT QATAR CHARITY
+        Qatar Charity is one of the largest humanitarians and development organizations in the world, providing life-saving
+        assistance to those hit by conflicts, persecution and natural disasters and creating durable solutions for poverty using
+        sustainable development programs in various fields.</div>
+    </div>
+    <div class="grid_6">
+      <div class="block-2">
+        <img src="images/b_icon3.png" alt="">
+        <div class="text1"><a href="#">MISSION</a></div>
+          We implement humanitarian and development programs, mobilize support and resources, and build effective partnerships to
+          provide a decent life for all.</div>
+    </div>
+    <div class="grid_6">
+      <div class="block-2">
+        <img src="images/b_icon2.png" alt="">
+        <div class="text1"><a href="#">VISION</a></div>
+      We envision a world in which all human beings have the right to live in peace and dignity</div>
+    </div>
+    <!-- <div class="grid_6">
+      <div class="block-2">
+        <img src="images/b_icon4.png" alt="">
+        <div class="text1"><a href="#">Audio Podcasts</a></div>
+        Emus at magna non nunc tristique rhoncus. Aliquam nibh antegestas id dictum a, commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id laoree 
+      </div>
+    </div> -->
+    <div class="clear"></div>
+  </div>
+  <div class="clear sep-1"></div>
+  <article class="carousel_wrapper">
+    <div class="container_12">
+      <div class="grid_12">
+        <div id="owl">
+          <div class="item">
+            <div class="banner">
+              <div class="banner_title">Feeding the fasting</div>
+              <p>Feeding the fasting over Ramadan is even closer to the Prophet's (saw) heart than providing food to those in need over
+              the other months of the year</p>
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner">
+              <div class="banner_title">Zakat al-fiter</div>
+              
+              <p>In Islam, Zakat al-Fitr, also known as Sadaqat al-Fitr or Zakat al-Fitrah, is an obligatory form of alms-giving required of every able Muslim at the end of Ramadan. The purpose of Zakat al-Fitr is to enable poor people to celebrate Eid al-Fitr, the festival to break the fast of Ramada</p>
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner">
+              <div class="banner_title">Sadaqah</div>
+              <p>Sadaqa is charity given voluntarily in order to please God. Sadaqa also describes a voluntary charitable act towards others, whether through generosity, love, compassion or faith. These acts are not necessarily physical or monetary.</p>
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner">
+              <div class="banner_title">Kaffarah</div>
+                <p>provides an opportunity to recompense for individuals who deliberately miss or break a fast during Ramadan without a valid reason. In the Hanafi school, if a person misses a day of fasting unnecessarily, he or she should either fast for
+                60 consecutive days or feed 60 poor people.</p>
+              <!-- <p>The detailed description of the <a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow" class="color2">freebie</a> is published on the blog. <br><br>
+              Find <a href="http://www.templatemonster.com/properties/topic/society-people/" rel="nofollow" class="color2">society &amp; people themes</a> in the same name category at TemplateMonster.com</p> -->
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="banner">
+              <div class="banner_title">Project</div>
+              
+              <p>Qatar Charity is a well-known name in the field of humanitarian work, both regionally and internationally. Starting from
+              the quest for good to prevail in the world</p>
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div>
+          <!-- <div class="item">
+            <div class="banner">
+              <div class="banner_title">September 10</div>
+              <p>Jorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis, sit wertolio mero dasererat rutrumrem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisise </p>
+              <a href="#" class="owl_link">Read More</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </article>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12"> 
+      <h1 class="logo">
+        <a href="index.html">
+          Qatar Charity
+        </a>
+      </h1>
+      <div class="socials">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+      </div>
+      <!-- <div class="sub-copy">&copy; <span id="copyright-year"></span>| <a href="#">Privacy Policy</a> <br> Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div> -->
+    </div>
+    <div class="clear"></div>
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-angle-up"></a>
+</body>
+</html>
+
