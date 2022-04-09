@@ -13,21 +13,4 @@ function AddDonation () {
 
 }
 
-let search =document.getElementById("Search")
-search.addEventListener("click",() => searchbox(search));
 
-
-function searchbox(search){
-    let check = 0;
-    let name = array.map((x) => x.StudentName == search.value)
-    for (let i in name){
-        if(name[i] == true){
-        
-        check = 1;
-    }
-}
-    if(check == 0){
-        alert("Name doesn't exit");
-    }
-
-}
