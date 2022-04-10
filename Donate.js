@@ -57,16 +57,20 @@ select.addEventListener("change",display)
 
 
 function display(){
+    
     const out = document.querySelector("#para")
     out.innerHTML = select.value
     let price = document.getElementById("price")
     let paymentbut = document.getElementById("paymentButton")
     price.style.display = "inline";
     paymentbut.style.display = "inline"
+    
+    
+    }
 
     console.log("hii")
 
-}
+
 
 let paymentbut = document.getElementById("paymentButton")
     paymentbut.addEventListener("click",payment)
