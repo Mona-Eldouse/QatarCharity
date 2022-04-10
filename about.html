@@ -17,6 +17,7 @@
 <script src="js/jquery.mobilemenu.js"></script>
 <script src="js/tmStickUp.js"></script>
 <script src="js/jquery.ui.totop.js"></script>
+
 <script>
  $(window).load(function(){
   $().UItoTop({ easingType: 'easeOutQuart' });
@@ -73,16 +74,32 @@
 <section id="content"><div class="ic">More Website Templates @ TemplateMonster.com - September22, 2014!</div>
   <div class="container_12">
     <div class="grid_8">
-      <h2 class="ta__center">What We Believe</h2>
-      <button id="DonateButton" type="button">Donate Here </button>
+      <h2 class="ta__center">Be a part of the best  </h2>
+    
+      <button id="DonateButton" type="button">Donate Here </button>  <div id="new" style="display: none">
+        <h1>Donate Below </h1>
+
+        <label for="Donationlist">Choose Your donation </label>
+          <select name="Donations" id="Donationlist" >
+            <option value=""></option>
+            <option value="Money">Money</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Toys">Toys</option>
+            <option value="Food">Food</option>
+          </select>
+          <p id="para"></p>
+        <input type="text" class="in" placeholder="Price" id="price" style="display:none"/>
+        <input type="Button" class="in" id="paymentButton" value="continue for payment" style="display:none"/>
+
+
+        
+
+        
+        <br /><br />
+        <input class="but" type="button" value="Save" id="save" />
+      </div>
     </div>
-    <div id="new" style="display: none">
-      <h1>Donate Below</h1>
-      <input type="text" class="in" placeholder="Type" id="type" />
-      <input type="text" class="in" placeholder="Price" id="price" />
-      <br /><br />
-      <input class="but" type="button" value="Save" id="save" />
-    </div>
+    
     <div class="clear"></div>
     <div class="grid_8">
       <div class="grid_4 alpha">
@@ -167,5 +184,6 @@
 </footer>
 <a href="#" id="toTop" class="fa fa-angle-up"></a>
 </body>
+<script  defer src="Donate.js"></script>
 </html>
 
