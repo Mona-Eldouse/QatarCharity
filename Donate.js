@@ -59,3 +59,7 @@ function display(){
 //         <a href="payment.html">Link </a>
 //     </script>`
 // }
+
+function serchByname(){
+    let searchtext = document.getElementById("searchtext")
+}
