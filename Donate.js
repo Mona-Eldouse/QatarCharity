@@ -32,11 +32,11 @@ function display(){
         paymentbut.style.display = "none"
     }
     
-    if(select.value == "Clothes"){
-        let shirts = document.getElementById("T-shirts")
-        shirts.style.display = "inline"
+    // if(select.value == "Clothes"){
+    //     let shirts = document.getElementById("T-shirts")
+    //     shirts.style.display = "inline"
 
-    }
+    // }
 
     
     }
@@ -46,9 +46,9 @@ function display(){
     
    
 
-function save(){
+// function save(){
 
-}
+// }
 
 // let paymentbut = document.getElementById("paymentButton")
 //     paymentbut.addEventListener("click",payment)
@@ -58,4 +58,4 @@ function save(){
 //    ` <script>
 //         <a href="payment.html">Link </a>
 //     </script>`
-}
+// }
