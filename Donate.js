@@ -62,4 +62,5 @@ function display(){
 
 function serchByname(){
     let searchtext = document.getElementById("searchtext")
+    searchtext 
 }
