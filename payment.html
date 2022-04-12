@@ -75,7 +75,7 @@
             font-size: 24px;
         }
 
-        .btn {
+        #btn {
             background-color: #04AA6D;
             color: white;
             padding: 12px;
@@ -87,7 +87,7 @@
             font-size: 17px;
         }
 
-        .btn:hover {
+        #btn:hover {
             background-color: #45a049;
         }
 
@@ -175,7 +175,7 @@
     <div class="row">
         <div class="col-75">
             <div class="container">
-                <form action="/action_page.php">
+                <!-- <form action="/action_page.php"> -->
 
                     <div class="row">
                         <!-- <div class="col-50">
@@ -233,7 +233,8 @@
                         <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                     </label>
                     <input type="submit" value="Continue to checkout" class="btn">
-                </form>
+                    <input type="submit" value="Continue to checkout" id="btn">
+                <!-- </form> -->
             </div>
         </div>
         <!-- <div class="col-25">
@@ -270,6 +271,7 @@
         </div>  
       </footer>
     <a href="#" id="toTop" class="fa fa-angle-up"></a>
+    <script defer src="payment.html"></script>
 </body>
 
 </html>
