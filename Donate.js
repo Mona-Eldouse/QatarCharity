@@ -46,9 +46,9 @@ function display(){
     
    
 
-// function save(){
+function save(){
 
-// }
+}
 
 // let paymentbut = document.getElementById("paymentButton")
 //     paymentbut.addEventListener("click",payment)
