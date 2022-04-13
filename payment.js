@@ -20,7 +20,10 @@ function save() {
     cvv == ""
   ) {
     alert("please fill the form ");
-  } else {
+  }let find = arr.findIndex((x)=> x.ccnum == ccnum);
+  if (find !=-1 ) return  alert (`
+  Credit Card already exists`)
+    else {
     arr.push({
       cname: cname,
       ccnum: ccnum,
@@ -30,4 +33,5 @@ function save() {
     });
   }
   console.log(arr);
+  
 }
