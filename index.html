@@ -50,6 +50,36 @@
   }); 
  }); 
 </script>
+    <script>
+      // Set the date we're counting 
+      var countDownDate = new Date("May 2, 2022 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
 <!--[if lt IE 8]>
  <div style=' clear: both; text-align:center; position: relative;'>
    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -73,7 +103,9 @@
       <h1 class="logo">
         <a href="index.html">
           Qatar Charity
-          <span>Ramadan of hope</span>
+          <span>EID COUNTDOWN </span>
+          <span id="demo" style="color: rgb(247, 201, 209);"></span>
+          <!-- <p id="demo"></p> -->
         </a>
       </h1>
     </div>
@@ -95,7 +127,7 @@
                <li><a href="ReliefCampaigns.html">Campaigns</a></li>
                <li><a href="program.html">Programs</a></li>
                <li><a href="payment.html">Payment</a></li>
-              
+              <!-- <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
                <li><input type="text" placeholder="search here" id="searchtext"><input type="button" value="SEARCH " id="Searchbutton">
 
              </ul>
@@ -119,6 +151,7 @@
 <!--=====================
           Content
 ======================-->
+
 <section id="content"><div class="ic"></div>
   <div class="container_12">
     <div class="grid_4">
@@ -279,6 +312,23 @@
   </div>  
 </footer>
 <a href="#" id="toTop" class="fa fa-angle-up"></a>
+<!-- <script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script> -->
 </body>
 </html>
 
