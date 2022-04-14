@@ -1,6 +1,6 @@
 "use strict"
 
-let array = [];
+let DonationCart = [];
 let donateBut = document.getElementById("DonateButton");
 donateBut.addEventListener("click", AddDonation);
 
@@ -15,7 +15,7 @@ function AddDonation () {
 let price = document.getElementById("price");
 const select = document.querySelector("#Donationlist")
 select.addEventListener("change",display)
-
+select.addEventListener("change",displayClothes)
 
 function display(){
     
@@ -30,37 +30,67 @@ function display(){
     else{
         price.style.display = "none";
         paymentbut.style.display = "none"
-    }
-    
-    // if(select.value == "Clothes"){
-    //     let shirts = document.getElementById("T-shirts")
-    //     shirts.style.display = "inline"
-
-    // }
-
-    
-    }
-
-   let savebutton = document.getElementById("save")
-   savebutton.addEventListener("click",save)
-    
-   
-
-function save(){
-
+        
+ }
 }
+ const choose = document.querySelector("#Donationlist")
+ choose.addEventListener("change",displayClothes)
 
-// let paymentbut = document.getElementById("paymentButton")
-//     paymentbut.addEventListener("click",payment)
 
+    function displayClothes(){
+        if(choose.value == "Clothes"){
+        let shirts = document.getElementById("T-shirts")
+        let dresses = document.getElementById("Dresses")
+        let Jackets = document.getElementById("Jackets")
+        let pants = document.getElementById("Pants")
+       let coats = document.getElementById("Coats")
+       let Babyclothes = document.getElementById("Babyclothes") 
+       
+      
+      
+        shirts.style.display = "inline";
+        dresses.style.display = "inline";
+        Jackets.style.display = "inline";
+        pants.style.display = "inline";
+        coats.style.display = "inline";
+        Babyclothes.style.display = "inline";
+        }
+        else{
+            let shirts = document.getElementById("T-shirts")
+            let dresses = document.getElementById("Dresses")
+            let Jackets = document.getElementById("Jackets")
+            let pants = document.getElementById("Pants")
+            let coats = document.getElementById("Coats")
+            let Babyclothes = document.getElementById("Babyclothes")
+            
 
-// function payment(){
-//    ` <script>
-//         <a href="payment.html">Link </a>
-//     </script>`
-// }
+            shirts.style.display = "none";
+            dresses.style.display = "none";
+            Jackets.style.display = "none";
+            pants.style.display = "none";
+            coats.style.display = "none";
+            Babyclothes.style.display = "none";
+           
+        }
+    }
 
-function serchByname(){
-    let searchtext = document.getElementById("searchtext")
-    searchtext 
-}
+    function donated(){
+      let delivery = document.getElementById("Donationdelivery")
+      delivery.style.display="inline"
+
+    }
+    const choosefood = document.querySelector("#Donationlist")
+    choosefood.addEventListener("change",displayfood)
+
+    function displayfood(){
+        //alert("hi")
+        let f = document.getElementById("food")
+        if(choosefood.value == "Food"){
+           f.style.display="inline";
+
+           
+
+        }
+    }
+
+    

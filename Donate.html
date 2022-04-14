@@ -27,7 +27,7 @@
 
 </head>
 
-<body class="" id="top">
+<body class="Bodyclass" id="top">
 
 <header>
   <div class="container_12">
@@ -35,7 +35,9 @@
       <h1 class="logo">
         <a href="index.html">
           Donate
-          <span>Qatar Charity Home </span>
+          <span>Qatar Charity Home  <br> <img src="Images/DonationCart.png" style="width: 100px;"></span>
+          
+         
         </a>
       </h1>
     </div>
@@ -56,8 +58,9 @@
                 <li><a href="ReliefCampaigns.html">Campaigns</a></li>
                 <li><a href="program.html">Programs</a></li>
                 <li><a href="payment.html">Payment</a></li>
-                
-               <li><input type="text" placeholder="search here" id="searchtext"><input type="button" value="SEARCH " id="Searchbutton">
+<!--                 
+               <li><input type="text" placeholder="search here" id="searchtext">
+              <input type="button" value="SEARCH " id="Searchbutton"> -->
 
              </ul>
             
@@ -73,7 +76,7 @@
 <!--=====================
           Content
 ======================-->
-<section id="content">
+<section id="content" class="section">
   <div class="container_12">
     <div class="grid_8">
       <h3 class="ta__center">Be a part of the best Charity in Qatar</h3>
@@ -86,22 +89,36 @@
             <option value=""></option>
             <option value="Money">Money</option>
             <option value="Clothes">Clothes</option>
-            <option value="Toys">Toys</option>
-            <option value="Food">Food</option>
+           <!-- <option value="Food">Food</option>-->
           </select>
           <p id="para"></p>
         <input type="text" class="in" placeholder="Price" id="price" style="display:none"/>
-        <input type="Button" class="in" id="paymentButton" value="continue for payment" style="display:none"/>
-        <input type="checkbox"id="T-shirts" name="T-shirts" value="T-shirts" style="display: none;">
-
-
+       <a input type="Button" class="in" id="paymentButton"  style="display:none"  href="payment.html">continue for payment </a>
         
+        <input type="button"id="T-shirts"  value="Add T-shirts" style="display: none;" onclick="donated()">
+        <input type="button"id="Dresses"  value="Add dresses" style="display: none;" onclick="donated()">
+        <input type="button"id="Pants" value="Add Pants" style="display: none;" onclick="donated()">
+        <input type="button"id="Jackets"  value="Add Jackets" style="display: none;"onclick="donated()">
+        <input type="button"id="Coats"  value="Add Coats" style="display: none;"onclick="donated()">
+        <input type="button"id="Babyclothes"  value=" Add Baby clothes" style="display: none;"onclick="donated()">
 
-        
         <br /><br />
-        <input class="but" type="button" value="Save" id="save" />
+        <div  id="Donationdelivery" style="display: none;"> 
+          <p > You have selected clothes to donate , please enter below how you are going to select below the donation deliver type</p>
+          <select name="donation delivery type"  >
+            <option value="pick donation delivery"></option>
+            <option value="ship">ship to Qatar Charity</option>
+            <option value="send location">Send location and wait for QC to come collect it</option>
+            <option value="place in box">Place in donation boxes</option>
+           
+          </select>
+          <a href="index.html"> <input type="submit" > </a>
+        </div>
+        
       </div>
+      
     </div>
+    
     
     <div class="clear"></div>
     <div class="grid_8">
@@ -133,6 +150,9 @@
           .....
         </div>
       </div>
+      <div>
+        <img src="images/Charity-Image.png">
+      </div>
     </div>
     <div class="grid_4">
       <ul class="list-1">
@@ -157,7 +177,7 @@
     <div class="grid_12">
       <div class="block-4">
         <div class="block-4_title"></div>
-        <a href="#">Learn <br> More</a>
+        <h3 style="color: white;" style="float: auto;">Giving is not just about making a donation. It is about making a difference.</h3>
       </div>
     </div>
     <div class="clear"></div>

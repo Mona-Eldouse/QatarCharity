@@ -44,7 +44,7 @@
 //   result.innerHTML = res;
 // }
 
-alert("hello")
+
 function searchtext() {
   let input = document.getElementsByClassName('container_12').value
   input = input.toLowerCase();
