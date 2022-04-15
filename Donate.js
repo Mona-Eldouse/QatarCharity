@@ -1,6 +1,5 @@
 "use strict"
 
-let DonationCart = [];
 let donateBut = document.getElementById("DonateButton");
 donateBut.addEventListener("click", AddDonation);
 
@@ -19,8 +18,7 @@ select.addEventListener("change",displayClothes)
 
 function display(){
     
-    //const out = document.querySelector("#para")
-    //out.innerHTML = select.value
+    
     let price = document.getElementById("price")
     let paymentbut = document.getElementById("paymentButton")
     if(select.value == "Money"){
@@ -83,7 +81,7 @@ function display(){
     choosefood.addEventListener("change",displayfood)
 
     function displayfood(){
-        //alert("hi")
+        
         let f = document.getElementById("food")
         if(choosefood.value == "Food"){
            f.style.display="inline";
